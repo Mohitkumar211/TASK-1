@@ -18,7 +18,7 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      working-directory: TASK-1/nodejs-cicd-app
+      working-directory: nodejs-cicd-app
       run: npm install
 
     - name: Run tests (optional)
