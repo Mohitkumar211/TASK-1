@@ -26,7 +26,7 @@ jobs:
 
     - name: Build Docker image
       working-directory: nodejs-cicd-app
-      run: docker build -t MOHITKUMAR211/nodejs-cicd-app .
+      run: docker build -t mohitkumar2111/nodejs-cicd-app .
 
     - name: Login to DockerHub
       uses: docker/login-action@v3
@@ -36,4 +36,4 @@ jobs:
 
     - name: Push Docker image
       working-directory: nodejs-cicd-app
-      run: docker push MOHITKUMAR211/nodejs-cicd-app
+      run: docker push mohitkumar2111/nodejs-cicd-app
