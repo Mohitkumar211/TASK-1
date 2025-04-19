@@ -25,6 +25,7 @@ jobs:
       run: echo "No tests yet"
 
     - name: Build Docker image
+      working-directory: nodejs-cicd-app
       run: docker build -t MOHITKUMAR211/nodejs-cicd-app .
 
     - name: Login to DockerHub
@@ -34,4 +35,5 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Push Docker image
+      working-directory: nodejs-cicd-app
       run: docker push MOHITKUMAR211/nodejs-cicd-app
